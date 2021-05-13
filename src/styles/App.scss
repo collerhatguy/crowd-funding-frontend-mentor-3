@@ -77,7 +77,9 @@ main {
 //      a. title-card
 .App {
     position: relative;
-}
+    background-color: hsl(0, 0%, 93%);
+}  
+
 .title-card {
     
     top: 300px;
@@ -89,7 +91,7 @@ main {
     text-align: center;
     .master-picture {
         position: absolute;
-        top: -30px;
+        top: 370px;
         left: 47%;
     }
     h2 {
@@ -130,8 +132,10 @@ main {
 }
 //      b. stat-card
 .stat-card {
-    width: 70%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: white;
     table {
         width: 100%;
     }
@@ -147,7 +151,9 @@ main {
     }
     td {
         color: $neutral-color-200;
+        font-size: $font-size;
         span {
+            font-size: $font-size + 10;
             color: $neutral-color-100;
             display: block;
         }
@@ -156,9 +162,12 @@ main {
 //      c. project-card
 .project-card {
     width: 50%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 3em;
 }
 .item-card {
-    width: 90%;
+    width: 95%;
     border:hsl(0, 0%, 48%) solid 2px;
     border-radius: 10px;
     padding: 10px;
