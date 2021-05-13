@@ -166,4 +166,60 @@ main {
   color: black;
   display: block;
 }
+
+.project-card {
+  width: 50%;
+}
+
+.item-card {
+  width: 90%;
+  border: #7a7a7a solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.item-card .item-header, .item-card .item-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.item-card .item-header span {
+  color: #3cb4ac;
+  font-weight: 700;
+}
+
+.item-card p {
+  color: #7a7a7a;
+  font-weight: 300;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.item-card aside {
+  color: #7a7a7a;
+}
+
+.item-card aside span {
+  color: black;
+  font-size: 26px;
+}
+
+.item-card button {
+  border-radius: 9000px;
+  padding: 1.2em 2.2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #3cb4ac;
+  color: white;
+}
 /*# sourceMappingURL=App.css.map */
