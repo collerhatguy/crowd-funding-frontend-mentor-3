@@ -1,0 +1,39 @@
+// table of contents 
+// 0. default settings
+// 1. variables
+//      a. screen width
+//      b. colors
+//      c. fonts
+// 2. mixins
+// 3. header
+// 4. main
+// 5. footer
+
+// 0. default settings
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// 1. variables
+//      a. screen width
+
+$mobile-width: 375px;
+$desktop-width: 1440px;
+
+//      b. colors
+
+$primary-color-100: hsl(176, 50%, 47%);
+$primary-color-200:  hsl(176, 72%, 28%);
+$neitral-color-100: hsl(0, 0%, 0%);
+$neitral-color-200: hsl(0, 0%, 48%);
+
+//      c. fonts
+
+$font-size: 16px;
+
+// 2. mixins
+// 3. header
+
+// 4. main
+// 5. footer
