@@ -4,7 +4,12 @@ import './styles/App.css';
 function App() {
   return (
     <div className="App">
-      <header> 
+      <header
+        style={
+          {
+            backgroundImage: "url(/images/image-hero-desktop.jpg)"
+          }
+        }> 
         <NavBar />
       </header>
       Mastercraft Bamboo Monitor Riser
