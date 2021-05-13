@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar";
 import TitleCard from "./components/TitleCard";
+import StatCard from "./components/StatCard";
 import "./styles/App.css";
 
 function App() {
@@ -18,14 +19,9 @@ function App() {
       </header>
       <main>
         <TitleCard />
+        <StatCard />
       </main>
-      
-      Back this project
-      Bookmark
     
-      $89,914 of $100,000 backed
-      5,007 total backers
-      56 days left
     
       About this project
     

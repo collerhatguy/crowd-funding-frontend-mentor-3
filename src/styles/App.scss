@@ -8,6 +8,7 @@
 // 3. header
 // 4. main
 //      a. title-card
+//      b. stat-card
 // 5. footer
 
 // 0. default settings
@@ -29,8 +30,8 @@ $desktop-width: 1440px;
 
 $primary-color-100: hsl(176, 50%, 47%);
 $primary-color-200:  hsl(176, 72%, 28%);
-$neitral-color-100: hsl(0, 0%, 0%);
-$neitral-color-200: hsl(0, 0%, 48%);
+$neutral-color-100: hsl(0, 0%, 0%);
+$neutral-color-200: hsl(0, 0%, 48%);
 
 //      c. fonts
 
@@ -66,19 +67,24 @@ header {
     }
 }
 // 4. main
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
 //      a. title-card
 .App {
     position: relative;
 }
 .title-card {
-    position: absolute;
+    
     top: 300px;
-    left: 25%;
+    width: 50%;
+    padding: 2em;
     background-color: white;
     border-radius: 10px;
     height: fit-content;
-    padding: 2em;
-    width: 50%;
     text-align: center;
     .master-picture {
         position: absolute;
@@ -118,6 +124,31 @@ header {
             img {
                 left: 90px;
             }
+        }
+    }
+}
+//      b. stat-card
+.stat-card {
+    width: 70%;
+    margin: 0 auto;
+    table {
+        width: 100%;
+    }
+    progress {
+        margin-left: 10%;
+        width: 80%;
+        background-color: $primary-color-200;
+    }
+    tr {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    td {
+        color: $neutral-color-200;
+        span {
+            color: $neutral-color-100;
+            display: block;
         }
     }
 }
