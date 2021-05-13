@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import TitleCard from "./components/TitleCard";
 import "./styles/App.css";
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
         </span>
         <NavBar />
       </header>
-      Mastercraft Bamboo Monitor Riser
-      A beautiful and handcrafted monitor stand to reduce neck and eye strain.
-    
+      <main>
+        <TitleCard />
+      </main>
+      
       Back this project
       Bookmark
     
