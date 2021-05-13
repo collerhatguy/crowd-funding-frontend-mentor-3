@@ -15,6 +15,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
 }
 // 1. variables
 //      a. screen width
@@ -87,16 +90,35 @@ header {
     }
     .btns-container {
         width: 100%;
+        padding: .8em 0px;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    button:first-child {
-        width: fit-content;
-        padding: .6em 1.2em; 
+    button {
         border-radius: 1000px;
+    }
+    button:first-child {
+        padding: 1.2em 2.2em; 
+        width: fit-content;
         background-color: $primary-color-100;
         color: white;
+    }
+    button:last-child {
+        position: relative;
+        width: 150px;
+        height: 60px;
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            transition-duration: 300ms;
+        }
+        &:hover {
+            img {
+                left: 90px;
+            }
+        }
     }
 }
 // 5. footer

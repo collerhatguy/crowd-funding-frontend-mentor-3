@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 header {
   height: 400px;
   width: 100vw;
@@ -71,6 +75,7 @@ header nav a {
 
 .title-card .btns-container {
   width: 100%;
+  padding: .8em 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,13 +86,34 @@ header nav a {
           align-items: center;
 }
 
+.title-card button {
+  border-radius: 1000px;
+}
+
 .title-card button:first-child {
+  padding: 1.2em 2.2em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: .6em 1.2em;
-  border-radius: 1000px;
   background-color: #3cb4ac;
   color: white;
+}
+
+.title-card button:last-child {
+  position: relative;
+  width: 150px;
+  height: 60px;
+}
+
+.title-card button:last-child img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.title-card button:last-child:hover img {
+  left: 90px;
 }
 /*# sourceMappingURL=App.css.map */
