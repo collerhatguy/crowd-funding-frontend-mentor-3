@@ -1,5 +1,5 @@
-import NavBar from "./components/NavBar"
-import './styles/App.css';
+import NavBar from "./components/NavBar";
+import "./styles/App.css";
 
 function App() {
   return (
@@ -10,6 +10,9 @@ function App() {
             backgroundImage: "url(/images/image-hero-desktop.jpg)"
           }
         }> 
+        <span className="title">
+            crowdfund
+        </span>
         <NavBar />
       </header>
       Mastercraft Bamboo Monitor Riser
