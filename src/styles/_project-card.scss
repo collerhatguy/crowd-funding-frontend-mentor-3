@@ -39,5 +39,9 @@
         width: fit-content;
         background-color: $primary-color-100;
         color: white;
+        transition-duration: 300ms;
+        &:hover {
+            background-color: $primary-color-200;
+        }
     }
 }

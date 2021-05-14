@@ -112,6 +112,12 @@ main {
   width: fit-content;
   background-color: #3cb4ac;
   color: white;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.title-card button:first-child:hover {
+  background-color: #147b74;
 }
 
 .title-card button:last-child {
@@ -229,5 +235,11 @@ main {
   width: fit-content;
   background-color: #3cb4ac;
   color: white;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.item-card button:hover {
+  background-color: #147b74;
 }
 /*# sourceMappingURL=App.css.map */

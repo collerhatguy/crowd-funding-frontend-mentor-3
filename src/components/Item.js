@@ -1,6 +1,16 @@
+import { useRef } from "react"
 import React from 'react'
 
 export default function Item({item}) {
+    const button = useRef();
+    const hover = () => {
+        button.current.style = {}
+    }
+    const notHover = () => {
+        button.current.style = {
+            backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",        
+        }
+    }
     return (
         <div className="item-card"
             style={{
@@ -14,6 +24,9 @@ export default function Item({item}) {
             <div className="item-bottom">
                 <aside><span>{item.quantity}</span> left</aside>
                 <button
+                    ref={button}
+                    onMouseEnter={() => hover()}
+                    onMouseLeave={() => notHover()}
                     style={{
                         backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",
                     }}>
