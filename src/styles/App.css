@@ -17,7 +17,7 @@ header {
   font-size: 16px;
 }
 
-header .title {
+header img {
   position: absolute;
   margin: 50px;
   left: 10%;

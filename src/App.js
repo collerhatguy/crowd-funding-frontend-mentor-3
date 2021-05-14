@@ -13,9 +13,7 @@ function App() {
             backgroundImage: "url(/images/image-hero-desktop.jpg)"
           }
         }> 
-        <span className="title">
-            crowdfund
-        </span>
+        <img src="/images/logo.svg"></img>
         <NavBar />
       </header>
       <main>
