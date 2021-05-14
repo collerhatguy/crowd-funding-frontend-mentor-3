@@ -15,16 +15,9 @@ export default function Item({item}) {
                 <aside><span>{item.quantity}</span> left</aside>
                 <button
                     style={{
-                        display: item.quantity ? "block" : "none" ,
+                        backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",
                     }}>
-                    Select Reward
-                </button>
-                <button
-                    style={{
-                        display: item.quantity ? "none" : "block",
-                        backgroundColor: "hsl(0, 0%, 48%)",
-                    }}>
-                    Out of stock
+                    {item.quantity ? "Select Reward" : "Out of stock"}
                 </button>
             </div>
         </div>
