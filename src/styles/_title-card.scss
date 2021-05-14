@@ -1,0 +1,51 @@
+
+.title-card {
+    
+    top: 300px;
+    width: 50%;
+    padding: 2em;
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    .master-picture {
+        position: absolute;
+        top: 370px;
+        left: 47%;
+    }
+    h2 {
+        padding: 1.5em;
+    }
+    .btns-container {
+        width: 100%;
+        padding: .8em 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    button {
+        border-radius: 1000px;
+    }
+    button:first-child {
+        padding: 1.2em 2.2em; 
+        width: fit-content;
+        background-color: $primary-color-100;
+        color: white;
+    }
+    button:last-child {
+        position: relative;
+        width: 150px;
+        height: 60px;
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            transition-duration: 300ms;
+        }
+        &:hover {
+            img {
+                left: 90px;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.project-card {
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 3em;
+}
+.item-card {
+    width: 95%;
+    border:hsl(0, 0%, 48%) solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    .item-header, .item-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .item-header span {
+        color: $primary-color-100;
+        font-weight: 700;
+    }
+    p {
+        color:hsl(0, 0%, 48%);
+        font-weight: 300;
+        width: 100%;
+        margin: 10px auto;
+    }
+    aside {
+        color: hsl(0, 0%, 48%);
+        span {
+            color: black;
+            font-size: $font-size + 10;
+        }
+    }
+    button {
+        border-radius: 9000px;
+        padding: 1.2em 2.2em; 
+        width: fit-content;
+        background-color: $primary-color-100;
+        color: white;
+    }
+}

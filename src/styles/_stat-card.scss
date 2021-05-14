@@ -1,0 +1,29 @@
+
+.stat-card {
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: white;
+    table {
+        width: 100%;
+    }
+    progress {
+        margin-left: 10%;
+        width: 80%;
+        background-color: $primary-color-200;
+    }
+    tr {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    td {
+        color: $neutral-color-200;
+        font-size: $font-size;
+        span {
+            font-size: $font-size + 10;
+            color: $neutral-color-100;
+            display: block;
+        }
+    }
+}
