@@ -4,11 +4,15 @@ import React from 'react'
 export default function Item({item}) {
     const button = useRef();
     const hover = () => {
-        button.current.style = {}
+        if (item.quantity) {
+            button.current.style = {};
+        }
     }
     const notHover = () => {
-        button.current.style = {
-            backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",        
+        if (item.quantity) {
+            button.current.style = {
+                backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",        
+            }
         }
     }
     return (
