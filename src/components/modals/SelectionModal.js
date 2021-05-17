@@ -1,9 +1,9 @@
 import React from 'react'
 import PledgeChoice from './PledgeChoice'
 
-export default function SelectionModal({items}) {
+export default function SelectionModal({items, selection}) {
     return (
-        <div>
+        <div style={selection ? {} : {display: 'none'}}>
             <button>X</button>
             <h3>Back this project</h3>
             <p>

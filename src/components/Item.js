@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import React from 'react'
 
-export default function Item({item}) {
+export default function Item({item, setSelection}) {
     const button = useRef();
     const hover = () => {
         if (item.quantity) {
@@ -22,7 +22,9 @@ export default function Item({item}) {
             }}>
             <div className="item-header">
                 <h3>{item.title}</h3>
-                <span>Pledge ${item.cost} or more</span>
+                <span
+                    onClick={() => setSelection()}
+                    >Pledge ${item.cost} or more</span>
             </div>
             <p>{item.description}</p>
             <div className="item-bottom">
