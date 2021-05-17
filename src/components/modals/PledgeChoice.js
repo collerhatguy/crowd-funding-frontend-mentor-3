@@ -9,7 +9,7 @@ export default function PledgeChoice({item}) {
             <p>{item.description}</p>
             <div className="pledge-input">
                 <span>Enter your pledge</span>
-                <input type="number" />
+                <input type="number" min={item.cost} />
                 <button>Continue</button>
             </div>
         </div>
