@@ -1,7 +1,7 @@
 import React from 'react'
 import PledgeChoice from './PledgeChoice'
 
-export default function DefaultModal({items}) {
+export default function SelectionModal({items}) {
     return (
         <div>
             <button>X</button>
