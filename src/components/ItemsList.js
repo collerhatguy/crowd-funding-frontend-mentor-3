@@ -12,7 +12,10 @@ export default function ItemsList() {
                         item={item} 
                         setSelection={() => setSelection(!selection)} />
             })}
-            <SelectionModal items={items} selection={selection}/>
+            <SelectionModal 
+                items={items} 
+                selection={selection}
+                setSelection={() => setSelection(!selection)}/>
         </div>
     )
 }

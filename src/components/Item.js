@@ -22,9 +22,7 @@ export default function Item({item, setSelection}) {
             }}>
             <div className="item-header">
                 <h3>{item.title}</h3>
-                <span
-                    onClick={() => setSelection()}
-                    >Pledge ${item.cost} or more</span>
+                <span>Pledge ${item.cost} or more</span>
             </div>
             <p>{item.description}</p>
             <div className="item-bottom">
@@ -33,6 +31,9 @@ export default function Item({item, setSelection}) {
                     ref={button}
                     onMouseEnter={() => hover()}
                     onMouseLeave={() => notHover()}
+                    onClick={() => {
+                        if (item.quantity) setSelection();
+                    }}
                     style={{
                         backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",
                     }}>

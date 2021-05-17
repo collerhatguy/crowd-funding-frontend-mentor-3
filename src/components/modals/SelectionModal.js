@@ -1,10 +1,10 @@
 import React from 'react'
 import PledgeChoice from './PledgeChoice'
 
-export default function SelectionModal({items, selection}) {
+export default function SelectionModal({items, selection, setSelection}) {
     return (
         <div style={selection ? {} : {display: 'none'}}>
-            <button>X</button>
+            <button onClick={() => setSelection()}>X</button>
             <h3>Back this project</h3>
             <p>
                 Want to support us in bringing Mastercraft 

@@ -21,13 +21,13 @@
         font-weight: 700;
     }
     p {
-        color:hsl(0, 0%, 48%);
+        color:$neutral-color-200;
         font-weight: 300;
         width: 100%;
         margin: 10px auto;
     }
     aside {
-        color: hsl(0, 0%, 48%);
+        color: $neutral-color-200;
         span {
             color: black;
             font-size: $font-size + 10;
