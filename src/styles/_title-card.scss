@@ -39,17 +39,18 @@
     button:last-child {
         position: relative;
         width: 150px;
-        height: 60px;
+        height: 58px;
+        padding-left: 40px;
+        background-color: $neutral-color-300;
+        border: none;
         img {
             position: absolute;
             left: 0px;
             top: 0px;
             transition-duration: 300ms;
-        }
-        &:hover {
-            img {
-                left: 90px;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

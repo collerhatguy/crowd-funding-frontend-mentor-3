@@ -123,7 +123,10 @@ main {
 .title-card button:last-child {
   position: relative;
   width: 150px;
-  height: 60px;
+  height: 58px;
+  padding-left: 40px;
+  background-color: #ededed;
+  border: none;
 }
 
 .title-card button:last-child img {
@@ -132,10 +135,15 @@ main {
   top: 0px;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
-}
-
-.title-card button:last-child:hover img {
-  left: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stat-card {

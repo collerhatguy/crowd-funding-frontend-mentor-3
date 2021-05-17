@@ -38,7 +38,7 @@ main {
 }
 .App {
     position: relative;
-    background-color: hsl(0, 0%, 93%);
+    background-color: $neutral-color-300;
 }  
 //      a. title-card
 @import "./title-card";

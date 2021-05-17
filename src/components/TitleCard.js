@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function TitleCard() {
+    const [bookMarked, setBookMarked] = useState(false)
+    const style = bookMarked ? {color: "hsl(176, 72%, 28%)"} : {};
+
     return (
         <div className="title-card">
             <img className="master-picture" src="/images/logo-mastercraft.svg" />
@@ -10,9 +13,13 @@ export default function TitleCard() {
             </p>
             <div className="btns-container">
                 <button>Back this project</button>
-                <button>
-                    <img className="bookmark-picture" src="/images/icon-bookmark.svg" />
-                    Bookmark
+                <button 
+                    onClick={() => setBookMarked(!bookMarked)}
+                    style={style}>
+                    <img 
+                        className={`bookmark-picture`} 
+                        src="/images/icon-bookmark.svg" />
+                    {bookMarked ? "Bookmarked" : "Bookmark"}
                 </button>
             </div>
         </div>
