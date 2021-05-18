@@ -250,4 +250,24 @@ main {
 .item-card button:hover {
   background-color: #147b74;
 }
+
+.selection-modal {
+  background-color: white;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  width: 30%;
+  z-index: 2;
+}
+
+#background {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .5;
+  background-color: black;
+}
 /*# sourceMappingURL=App.css.map */

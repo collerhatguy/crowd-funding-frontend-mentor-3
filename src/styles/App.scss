@@ -10,7 +10,9 @@
 //      a. title-card
 //      b. stat-card
 //      c. item-card
-// 5. footer
+// 5. portals
+//      a. selection
+//      b. 
 
 // 0. default settings
 * {
@@ -49,4 +51,24 @@ main {
 //      c. project-card
 @import "./project-card";
 
-// 5. footer
+// 5. portals
+//      a. selection
+.selection-modal {
+    background-color: white;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    width: 30%;
+    z-index: 2;
+}
+#background {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+    background-color: $neutral-color-100;
+}
+//      b. 
