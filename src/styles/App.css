@@ -254,10 +254,45 @@ main {
 .selection-modal {
   background-color: white;
   position: absolute;
-  left: 35%;
+  left: 25%;
   top: 50%;
-  width: 30%;
+  width: 50%;
+  padding: 30px;
   z-index: 2;
+  border-radius: 10px;
+}
+
+.selection-modal #exit-btn {
+  margin-left: 95%;
+}
+
+.selection-modal .highlight {
+  color: #3cb4ac;
+}
+
+.selection-modal h3 {
+  font-size: 32px;
+}
+
+.selection-modal label {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.selection-modal label span {
+  padding: 10px;
+}
+
+.selection-modal label:hover {
+  color: #3cb4ac;
+}
+
+.selection-modal p {
+  color: #7a7a7a;
+  font-weight: 300;
+  width: 100%;
+  margin: 10px auto;
 }
 
 #background {
