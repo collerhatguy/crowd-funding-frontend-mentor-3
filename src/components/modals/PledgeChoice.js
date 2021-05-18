@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
 export default function PledgeChoice({item, success, setSelection}) {
+
     const [pledge, setPledge] = useState(false);
     const submit = () => {
         success()

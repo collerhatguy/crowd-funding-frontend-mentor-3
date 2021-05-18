@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import PledgeChoice from './PledgeChoice'
+import PledgeChoice from './PledgeChoice';
+import PledgeNoReward from "./PledgeNoReward";
 
 export default function SelectionModal({items, selection, setSelection, success}) {
+
     return ReactDOM.createPortal(
         <div style={selection ? {} : {display: 'none'}}>
             <div 
@@ -15,14 +17,7 @@ export default function SelectionModal({items, selection, setSelection, success}
                     Want to support us in bringing Mastercraft 
                     Bamboo Monitor Riser out in the world?
                 </p>
-                <div className="pledge-choice">
-                    <label for={`no-reward`}>
-                        <input type="checkbox" value="none" id="no-reward" />
-                        Pledge with no reward
-                    </label>
-                    <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
-                    you will be signed up to receive product updates via email.</p>
-                </div>
+                <PledgeNoReward success={success} setSelection={setSelection} />
                 {items.map(item => {
                     return <PledgeChoice item={item} success={success} setSelection={setSelection} />
                 })}
