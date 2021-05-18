@@ -39,7 +39,7 @@ export default function PledgeChoice({
                 <input 
                     type="number" 
                     min={item.cost} 
-                    onChange={(e) => setMoneyOffered(e.target.value)}
+                    onChange={(e) => setMoneyOffered(parseInt(e.target.value))}
                 />
                 <button
                     onClick={() => submit()}
