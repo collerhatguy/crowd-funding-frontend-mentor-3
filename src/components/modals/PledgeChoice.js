@@ -1,7 +1,11 @@
 import React, {useState} from 'react'
 
-export default function PledgeChoice({item}) {
-    const [pledge, setPledge] = useState(false)
+export default function PledgeChoice({item, success, setSelection}) {
+    const [pledge, setPledge] = useState(false);
+    const submit = () => {
+        success()
+        setSelection(false);
+    }
     return (
         <div 
             style={pledge ? {borderColor: "hsl(176, 50%, 47%)"} : {}}
@@ -25,7 +29,9 @@ export default function PledgeChoice({item}) {
                 className="pledge-input">
                 <span>Enter your pledge</span>
                 <input type="number" min={item.cost} />
-                <button>Continue</button>
+                <button
+                    onClick={() => submit()}
+                >Continue</button>
             </div>
         </div>
     )

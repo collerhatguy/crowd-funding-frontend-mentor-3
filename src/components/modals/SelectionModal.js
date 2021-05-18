@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import PledgeChoice from './PledgeChoice'
 
-export default function SelectionModal({items, selection, setSelection}) {
+export default function SelectionModal({items, selection, setSelection, success}) {
     return ReactDOM.createPortal(
         <div style={selection ? {} : {display: 'none'}}>
             <div 
@@ -24,7 +24,7 @@ export default function SelectionModal({items, selection, setSelection}) {
                     you will be signed up to receive product updates via email.</p>
                 </div>
                 {items.map(item => {
-                    return <PledgeChoice item={item} />
+                    return <PledgeChoice item={item} success={success} setSelection={setSelection} />
                 })}
             </div>
             <div id="background" />
