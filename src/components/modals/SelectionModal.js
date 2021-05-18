@@ -27,7 +27,7 @@ export default function SelectionModal({items, selection, setSelection, success}
                     return <PledgeChoice item={item} success={success} setSelection={setSelection} />
                 })}
             </div>
-            <div id="background" />
+            <div className="background" />
         </div>,
         document.getElementById("portal")
     )
