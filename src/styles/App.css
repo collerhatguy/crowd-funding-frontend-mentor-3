@@ -262,6 +262,35 @@ main {
   border-radius: 10px;
 }
 
+.selection-modal .pledge-choice {
+  border: 2px #7a7a7a solid;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.selection-modal .pledge-choice .pledge-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.selection-modal .pledge-choice aside {
+  color: #7a7a7a;
+  font-size: 16px;
+}
+
+.selection-modal .pledge-choice aside span {
+  font-size: 26px;
+  color: black;
+}
+
 .selection-modal #exit-btn {
   margin-left: 95%;
 }
@@ -275,9 +304,9 @@ main {
 }
 
 .selection-modal label {
+  cursor: pointer;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
-  cursor: pointer;
 }
 
 .selection-modal label span {
@@ -293,6 +322,76 @@ main {
   font-weight: 300;
   width: 100%;
   margin: 10px auto;
+}
+
+.selection-modal .pledge-input {
+  color: #7a7a7a;
+  font-weight: 300;
+  width: 100%;
+  padding-top: 20px;
+  border-top: #7a7a7a solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.selection-modal .pledge-input span {
+  width: 60%;
+}
+
+.selection-modal .pledge-input button {
+  border-radius: 9000px;
+  padding: 1.2em 2.2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #147b74;
+  color: white;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.selection-modal .pledge-input button:hover {
+  background-color: #147b74;
+}
+
+.selection-modal .pledge-input input {
+  text-align: center;
+  border-radius: 9000px;
+  padding: 1.2em 2.2em;
+  margin: .2em;
+  width: 20%;
+  background-color: white;
+  color: #3cb4ac;
+  border-color: #3cb4ac;
+}
+
+.selection-modal .pledge-input input::before {
+  content: "$";
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #7a7a7a;
+  font-weight: 300;
+}
+
+.selection-modal .pledge-input input::-webkit-outer-spin-button,
+.selection-modal .pledge-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.selection-modal .pledge-input input[type=number] {
+  -moz-appearance: textfield;
 }
 
 #background {
