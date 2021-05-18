@@ -19,7 +19,7 @@ export default function ItemsList() {
                 selection={selection}
                 setSelection={() => setSelection(!selection)}
                 success={() => setSuccess(true)}/>
-            <SuccessModal success={success} />
+            <SuccessModal success={success} done={() => setSuccess(false)} />
         </div>
     )
 }

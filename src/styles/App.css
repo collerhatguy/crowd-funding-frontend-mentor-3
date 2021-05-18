@@ -414,11 +414,34 @@ main {
   z-index: 2;
   border-radius: 10px;
   background-color: white;
+  text-align: center;
 }
 
 .success-modal img {
-  position: absolute;
-  top: -33px;
-  left: 45%;
+  margin: 0px 0px 30px 0px;
+}
+
+.success-modal p {
+  color: #7a7a7a;
+  font-weight: 300;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.success-modal button {
+  border-radius: 9000px;
+  padding: 1.2em 2.2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  color: #147b74;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.success-modal button:hover {
+  background-color: #147b74;
+  color: white;
 }
 /*# sourceMappingURL=App.css.map */

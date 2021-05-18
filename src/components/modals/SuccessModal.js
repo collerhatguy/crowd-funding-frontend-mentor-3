@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from "react-dom";
 
-export default function SuccessModal({success}) {
+export default function SuccessModal({success, done}) {
     return ReactDOM.createPortal(
-        <div>
+        <div style={success ? {} : {display: "none"}}>
             <div 
                 className="success-modal"
-                style={success ? {} : {display: "none"}}>
+                >
                 <img src="/images/icon-check.svg" />
                 <h3>Thanks for your support!</h3>
                 <p>
@@ -15,7 +15,9 @@ export default function SuccessModal({success}) {
                     worldwide. You will get an email once our 
                     campaign is completed.
                 </p>
-                <button>Got it!</button>
+                <button
+                    onClick={() => done()}
+                    >Got it!</button>
             </div>
             <div className="background" />
         </div> ,
