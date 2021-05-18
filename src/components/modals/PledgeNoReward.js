@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function PledgeNoReward({success, setSelection}) {
+export default function PledgeNoReward({success, setSelection, setBackers}) {
     const [pledge, setPledge] = useState(false);
     const submit = () => {
         success();

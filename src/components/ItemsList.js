@@ -4,7 +4,7 @@ import SelectionModal from "./modals/SelectionModal";
 import SuccessModal from "./modals/SuccessModal";
 import items from "../items";
 
-export default function ItemsList() {
+export default function ItemsList({setMoneyRaised}) {
     const [selection, setSelection] = useState(false);
     const [success, setSuccess] = useState(false)
     return (
@@ -18,7 +18,9 @@ export default function ItemsList() {
                 items={items} 
                 selection={selection}
                 setSelection={() => setSelection(!selection)}
-                success={() => setSuccess(true)}/>
+                success={() => setSuccess(true)}
+                setMoneyRaised={setMoneyRaised}
+            />
             <SuccessModal success={success} done={() => setSuccess(false)} />
         </div>
     )

@@ -1,11 +1,18 @@
 import React, {useState} from 'react'
 
-export default function PledgeChoice({item, success, setSelection}) {
+export default function PledgeChoice({
+    item, 
+    success, 
+    setSelection, 
+    setMoneyRaised
+}) {
 
     const [pledge, setPledge] = useState(false);
+    const [moneyOffered, setMoneyOffered] = useState(0);
     const submit = () => {
         success()
         setSelection(false);
+        setMoneyRaised(prevMoney => prevMoney + moneyOffered);
     }
     return (
         <div 
@@ -29,7 +36,11 @@ export default function PledgeChoice({item, success, setSelection}) {
                 style={pledge ? {} : {display: "none"}}
                 className="pledge-input">
                 <span>Enter your pledge</span>
-                <input type="number" min={item.cost} />
+                <input 
+                    type="number" 
+                    min={item.cost} 
+                    onChange={(e) => setMoneyOffered(e.target.value)}
+                />
                 <button
                     onClick={() => submit()}
                 >Continue</button>

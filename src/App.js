@@ -7,6 +7,7 @@ import "./styles/App.css";
 
 function App() {
   const [moneyRaised, setMoneyRaised] = useState(89914);
+  const [backers, setBackers] = useState(5007);
   return (
     <div className="App">
       <header
@@ -19,9 +20,9 @@ function App() {
         <NavBar />
       </header>
       <main>
-        <TitleCard />
-        <StatCard moneyRaised={moneyRaised}/>
-        <ProjectCard />
+        <TitleCard setBackers={setBackers}/>
+        <StatCard moneyRaised={moneyRaised} backers={backers}/>
+        <ProjectCard setMoneyRaised={setMoneyRaised} setBackers={setBackers}/>
       </main>
     </div>
   );
