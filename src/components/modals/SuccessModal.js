@@ -20,7 +20,7 @@ export default function SuccessModal({success, done}) {
                     >Got it!</button>
             </div>
             <div className="background" />
-        </div> ,
+        </div>,
         document.getElementById("portal")
     )
 }

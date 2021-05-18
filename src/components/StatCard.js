@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function StatCard() {
+export default function StatCard({moneyRaised}) {
     return (
         <div className="stat-card">
             <table>
                 <tr>
                     <td>
-                        <span>$89,914</span> of $100,000 backed 
+                        <span>${moneyRaised.toLocaleString ("en-US")}</span> of $100,000 backed 
                     </td>
                     <td>
                         <span>5,007 </span> total backers 
@@ -16,7 +16,7 @@ export default function StatCard() {
                     </td>
                 </tr>
             </table>
-            <progress value="80" max="100"></progress>
+            <progress value={Math.floor(moneyRaised / 1000)} max="100"></progress>
         </div>
     )
 }
