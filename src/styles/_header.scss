@@ -4,11 +4,15 @@ header {
     color: white;
     position: relative;
     font-size: $font-size;
-    img {
+    #header-image {
         position: absolute;
-        margin: 50px;
-        left: 10%;
-        font-weight: 900;
+        top: 0px;
+        left: 0px;
+    }
+    #logo-image {
+        position: absolute;
+        top: 40px;
+        left: 40px;
     }
     nav {
         width: 100%;
@@ -17,7 +21,7 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: baseline;
-        margin: 50px 0px;
+        margin: 40px 0px;
         a {
             margin: 0px 50px;
             cursor: pointer;

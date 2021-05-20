@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import masterImg from "../images/logo-mastercraft.svg"
 
 export default function TitleCard({setBackers}) {
     const [bookMarked, setBookMarked] = useState(false)
@@ -11,7 +12,7 @@ export default function TitleCard({setBackers}) {
 
     return (
         <div className="title-card">
-            <img className="master-picture" src="/images/logo-mastercraft.svg" />
+            <img className="master-picture" src={masterImg} />
             <h2>Mastercraft Bamboo Monitor Riser</h2>
             <p>
                 A beautiful and handcrafted monitor stand to reduce neck and eye strain.
