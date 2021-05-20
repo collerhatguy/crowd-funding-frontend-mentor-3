@@ -45,6 +45,11 @@ header nav a {
   cursor: pointer;
 }
 
+body {
+  position: relative;
+  background-color: #ededed;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,11 +64,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-}
-
-.App {
-  position: relative;
-  background-color: #ededed;
+  position: absolute;
+  top: 370px;
 }
 
 .title-card {
@@ -106,6 +108,7 @@ main {
 }
 
 .title-card button:first-child {
+  border-radius: 1000px;
   padding: 1.2em 2.2em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -222,6 +225,7 @@ main {
 .item-card p {
   color: #7a7a7a;
   font-weight: 300;
+  font-size: 16px;
   width: 100%;
   margin: 10px auto;
 }
@@ -236,7 +240,7 @@ main {
 }
 
 .item-card button {
-  border-radius: 9000px;
+  border-radius: 1000px;
   padding: 1.2em 2.2em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -263,7 +267,7 @@ main {
 }
 
 .selection-modal .pledge-choice {
-  border: 2px #7a7a7a solid;
+  border: #7a7a7a 2px solid;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -283,6 +287,7 @@ main {
 
 .selection-modal .pledge-choice aside {
   color: #7a7a7a;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -320,6 +325,7 @@ main {
 .selection-modal p {
   color: #7a7a7a;
   font-weight: 300;
+  font-size: 16px;
   width: 100%;
   margin: 10px auto;
 }
@@ -346,12 +352,12 @@ main {
 }
 
 .selection-modal .pledge-input button {
-  border-radius: 9000px;
+  border-radius: 1000px;
   padding: 1.2em 2.2em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #147b74;
+  background-color: #3cb4ac;
   color: white;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
@@ -424,6 +430,7 @@ main {
 .success-modal p {
   color: #7a7a7a;
   font-weight: 300;
+  font-size: 16px;
   width: 100%;
   margin: 10px auto;
 }

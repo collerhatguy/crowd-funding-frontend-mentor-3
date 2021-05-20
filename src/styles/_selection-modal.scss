@@ -9,7 +9,7 @@
     z-index: 2;
     border-radius: 10px;
     .pledge-choice {
-        border: 2px $neutral-color-200 solid;
+        border: $neutral-color-200 2px solid;
         padding: 20px;
         margin: 20px;
         border-radius: 10px;
@@ -19,8 +19,7 @@
             align-items: baseline;
         }
         aside {
-            color: $neutral-color-200;
-            font-size: $font-size;
+            @include paragraph();
             span {
                 font-size: $font-size + 10;
                 color: $neutral-color-100;
@@ -34,7 +33,7 @@
         color: $primary-color-100;
     }
     h3 {
-        font-size: $font-size *2;
+        font-size: $font-size * 2;
     }
     label {
         cursor: pointer;
@@ -47,8 +46,7 @@
         }
     }
     p {
-        color:$neutral-color-200;
-        font-weight: 300;
+        @include paragraph();
         width: 100%;
         margin: 10px auto;
     }
@@ -65,15 +63,7 @@
             width: 60%;
         }
         button {
-            border-radius: 9000px;
-            padding: 1.2em 2.2em; 
-            width: fit-content;
-            background-color: $primary-color-200;
-            color: white;
-            transition-duration: 300ms;
-            &:hover {
-                background-color: $primary-color-200;
-            }
+            @include button1();
         }
         input {
             text-align: center;

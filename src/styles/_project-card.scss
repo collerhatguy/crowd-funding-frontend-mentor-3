@@ -21,8 +21,7 @@
         font-weight: 700;
     }
     p {
-        color:$neutral-color-200;
-        font-weight: 300;
+        @include paragraph();
         width: 100%;
         margin: 10px auto;
     }
@@ -34,14 +33,6 @@
         }
     }
     button {
-        border-radius: 9000px;
-        padding: 1.2em 2.2em; 
-        width: fit-content;
-        background-color: $primary-color-100;
-        color: white;
-        transition-duration: 300ms;
-        &:hover {
-            background-color: $primary-color-200;
-        }
+        @include button1();
     }
 }

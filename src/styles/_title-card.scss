@@ -26,14 +26,7 @@
         border-radius: 1000px;
     }
     button:first-child {
-        padding: 1.2em 2.2em; 
-        width: fit-content;
-        background-color: $primary-color-100;
-        color: white;
-        transition-duration: 300ms;
-        &:hover {
-            background-color: $primary-color-200;
-        }
+        @include button1();
     }
     button:last-child {
         position: relative;
