@@ -19,8 +19,11 @@ header {
 
 header #header-image {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0px;
   left: 0px;
+  right: 0px;
 }
 
 header #logo-image {
@@ -70,7 +73,7 @@ main {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   position: absolute;
-  top: 370px;
+  top: 350px;
 }
 
 .title-card {
@@ -137,7 +140,7 @@ main {
   border: none;
 }
 
-.title-card button:last-child img {
+.title-card button:last-child #bookmark-image {
   position: absolute;
   left: 0px;
   top: 0px;
