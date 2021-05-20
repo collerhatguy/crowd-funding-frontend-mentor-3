@@ -53,6 +53,10 @@ header nav a {
   cursor: pointer;
 }
 
+#burger-image {
+  display: none;
+}
+
 body {
   position: relative;
   background-color: #ededed;
@@ -155,6 +159,19 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .title-card {
+    padding-left: 0px;
+  }
+  .title-card #master-picture {
+    left: 44%;
+  }
+  .title-card button:first-child {
+    padding: 1.2em;
+    margin-left: 0px;
+  }
 }
 
 .stat-card {
@@ -458,5 +475,51 @@ main {
 .success-modal button:hover {
   background-color: #147b74;
   color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  .title-card, .stat-card, .project-card {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: 100%;
+    margin: 0px auto;
+    border-radius: 0px;
+  }
+  .selection-modal, .success-modal {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100%;
+    left: 0%;
+    padding: 20px;
+  }
+  #burger-image {
+    display: block;
+    position: absolute;
+    right: 70px;
+  }
+  #desktop-nav {
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  #desktop-nav[data-visible="true"] {
+    visibility: visible;
+  }
+  #desktop-nav a {
+    margin: 40px 50px 0px 0px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

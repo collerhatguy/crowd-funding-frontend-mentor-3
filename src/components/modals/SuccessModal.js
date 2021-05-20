@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from "react-dom";
+import successImg from "../../images/icon-check.svg";
 
 export default function SuccessModal({success, done}) {
     return ReactDOM.createPortal(
@@ -7,7 +8,7 @@ export default function SuccessModal({success, done}) {
             <div 
                 className="success-modal"
                 >
-                <img src="/images/icon-check.svg" />
+                <img src={successImg} />
                 <h3>Thanks for your support!</h3>
                 <p>
                     Your pledge brings us one step closer to 
@@ -17,7 +18,7 @@ export default function SuccessModal({success, done}) {
                 </p>
                 <button
                     onClick={() => done()}
-                    >Got it!</button>
+                >Got it!</button>
             </div>
             <div className="background" />
         </div>,

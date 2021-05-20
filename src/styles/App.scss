@@ -12,8 +12,8 @@
 //      c. item-card
 // 5. portals
 //      a. selection
-//      b. 
-
+//      b. success
+// 6. media query
 // 0. default settings
 * {
     padding: 0;
@@ -86,3 +86,37 @@ main {
 
 //      b. success
 @import "./success-modal";
+
+// 6. media query
+@media only screen and (max-width: 375px) {
+    .title-card, .stat-card, .project-card {
+        min-width: fit-content;
+        max-width: 100%;
+        margin: 0px auto;
+        border-radius: 0px;
+    }
+    .selection-modal, .success-modal {
+        width: fit-content;
+        max-width: 100%;
+        left: 0%;
+        padding: 20px;
+    }
+    #burger-image {
+        display: block;
+        position: absolute;
+        right: 70px;
+    }
+    #desktop-nav {
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        &[data-visible="true"] {
+            visibility: visible;
+        }
+        a {
+            margin: 40px 50px 0px 0px;
+        }
+    }
+}
