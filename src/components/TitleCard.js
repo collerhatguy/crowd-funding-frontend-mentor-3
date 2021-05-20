@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import masterImg from "../images/logo-mastercraft.svg"
+import React, { useState } from 'react';
+import masterImg from "../images/logo-mastercraft.svg";
+import bookmarkImg from "../images/icon-bookmark.svg";
 
 export default function TitleCard({setBackers}) {
     const [bookMarked, setBookMarked] = useState(false)
@@ -12,7 +13,7 @@ export default function TitleCard({setBackers}) {
 
     return (
         <div className="title-card">
-            <img className="master-picture" src={masterImg} />
+            <img id="master-picture" src={masterImg} />
             <h2>Mastercraft Bamboo Monitor Riser</h2>
             <p>
                 A beautiful and handcrafted monitor stand to reduce neck and eye strain.
@@ -25,8 +26,8 @@ export default function TitleCard({setBackers}) {
                     onClick={() => setBookMarked(!bookMarked)}
                     style={style}>
                     <img 
-                        className={`bookmark-picture`} 
-                        src="/images/icon-bookmark.svg" />
+                        id="bookmark-image" 
+                        src={bookmarkImg} />
                     {bookMarked ? "Bookmarked" : "Bookmark"}
                 </button>
             </div>

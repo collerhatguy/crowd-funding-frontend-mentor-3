@@ -85,10 +85,10 @@ main {
   text-align: center;
 }
 
-.title-card .master-picture {
+.title-card #master-picture {
   position: absolute;
-  top: 370px;
-  left: 47%;
+  top: -30px;
+  left: 48%;
 }
 
 .title-card h2 {
