@@ -35,3 +35,10 @@ header {
 #burger-image {
     display: none;
 }
+@media (max-width: 375px) {
+    header {
+        #header-image {
+            src: url(../images/image-hero-mobile.jpg);
+        }
+    }
+}
