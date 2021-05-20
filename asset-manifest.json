@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/crowd-funding-frontend-mentor-3/static/css/main.78243170.chunk.css",
-    "main.js": "/crowd-funding-frontend-mentor-3/static/js/main.1d4253bf.chunk.js",
-    "main.js.map": "/crowd-funding-frontend-mentor-3/static/js/main.1d4253bf.chunk.js.map",
+    "main.css": "/crowd-funding-frontend-mentor-3/static/css/main.d3fae763.chunk.css",
+    "main.js": "/crowd-funding-frontend-mentor-3/static/js/main.875da1f1.chunk.js",
+    "main.js.map": "/crowd-funding-frontend-mentor-3/static/js/main.875da1f1.chunk.js.map",
     "runtime-main.js": "/crowd-funding-frontend-mentor-3/static/js/runtime-main.3723738f.js",
     "runtime-main.js.map": "/crowd-funding-frontend-mentor-3/static/js/runtime-main.3723738f.js.map",
     "static/js/2.d0114aa5.chunk.js": "/crowd-funding-frontend-mentor-3/static/js/2.d0114aa5.chunk.js",
     "static/js/2.d0114aa5.chunk.js.map": "/crowd-funding-frontend-mentor-3/static/js/2.d0114aa5.chunk.js.map",
     "index.html": "/crowd-funding-frontend-mentor-3/index.html",
-    "static/css/main.78243170.chunk.css.map": "/crowd-funding-frontend-mentor-3/static/css/main.78243170.chunk.css.map",
-    "static/js/2.d0114aa5.chunk.js.LICENSE.txt": "/crowd-funding-frontend-mentor-3/static/js/2.d0114aa5.chunk.js.LICENSE.txt"
+    "static/css/main.d3fae763.chunk.css.map": "/crowd-funding-frontend-mentor-3/static/css/main.d3fae763.chunk.css.map",
+    "static/js/2.d0114aa5.chunk.js.LICENSE.txt": "/crowd-funding-frontend-mentor-3/static/js/2.d0114aa5.chunk.js.LICENSE.txt",
+    "static/media/icon-bookmark.7777f8ec.svg": "/crowd-funding-frontend-mentor-3/static/media/icon-bookmark.7777f8ec.svg",
+    "static/media/icon-check.bdee5269.svg": "/crowd-funding-frontend-mentor-3/static/media/icon-check.bdee5269.svg",
+    "static/media/icon-hamburger.f8a9f0cf.svg": "/crowd-funding-frontend-mentor-3/static/media/icon-hamburger.f8a9f0cf.svg",
+    "static/media/image-hero-desktop.631209c1.jpg": "/crowd-funding-frontend-mentor-3/static/media/image-hero-desktop.631209c1.jpg",
+    "static/media/logo-mastercraft.dca2a831.svg": "/crowd-funding-frontend-mentor-3/static/media/logo-mastercraft.dca2a831.svg",
+    "static/media/logo.e6f12bc6.svg": "/crowd-funding-frontend-mentor-3/static/media/logo.e6f12bc6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3723738f.js",
     "static/js/2.d0114aa5.chunk.js",
-    "static/css/main.78243170.chunk.css",
-    "static/js/main.1d4253bf.chunk.js"
+    "static/css/main.d3fae763.chunk.css",
+    "static/js/main.875da1f1.chunk.js"
   ]
 }
