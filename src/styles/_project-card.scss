@@ -3,13 +3,19 @@
     border-radius: 10px;
     background-color: white;
     padding: 3em;
+    p {
+        @include paragraph();
+        width: 100%;
+        margin: 10px auto;
+    }
 }
 .item-card {
     width: 95%;
     border:hsl(0, 0%, 48%) solid 2px;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px auto;
+    padding: 40px;
+    margin: 0px auto;
+    margin-top: 40px;
     .item-header, .item-bottom {
         width: 100%;
         display: flex;

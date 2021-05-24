@@ -7,10 +7,22 @@
     table {
         width: 100%;
     }
-    progress {
+    progress[value] {
+        -webkit-appearance: none;
+        appearance: none;
         margin-left: 10%;
+        margin-bottom: 5%;
         width: 80%;
         background-color: $primary-color-200;
+        border-radius: 1000px;
+        &::-webkit-progress-bar {
+
+            border-radius: 9000px;
+        }
+        &::-webkit-progress-value {
+            background-color: $primary-color-100;
+            border-radius: 9000px;
+        }
     }
     tr {
         display: flex;
@@ -20,10 +32,15 @@
     td {
         color: $neutral-color-200;
         font-size: $font-size;
+        margin: 20px auto;
         span {
-            font-size: $font-size + 10;
+            font-size: $font-size + 20;
             color: $neutral-color-100;
             display: block;
+        }
+        &:first-child, &:nth-child(2) {
+            border-right: $primary-color-200 1px solid;
+            padding-right: 10%;
         }
     }
 }

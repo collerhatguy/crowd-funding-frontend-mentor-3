@@ -198,10 +198,24 @@ main {
   width: 100%;
 }
 
-.stat-card progress {
+.stat-card progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   margin-left: 10%;
+  margin-bottom: 5%;
   width: 80%;
   background-color: #147b74;
+  border-radius: 1000px;
+}
+
+.stat-card progress[value]::-webkit-progress-bar {
+  border-radius: 9000px;
+}
+
+.stat-card progress[value]::-webkit-progress-value {
+  background-color: #3cb4ac;
+  border-radius: 9000px;
 }
 
 .stat-card tr {
@@ -217,14 +231,20 @@ main {
 }
 
 .stat-card td {
-  color: #7a7a7a;
+  color: #adadad;
   font-size: 16px;
+  margin: 20px auto;
 }
 
 .stat-card td span {
-  font-size: 26px;
+  font-size: 36px;
   color: black;
   display: block;
+}
+
+.stat-card td:first-child, .stat-card td:nth-child(2) {
+  border-right: #147b74 1px solid;
+  padding-right: 10%;
 }
 
 .project-card {
@@ -234,12 +254,22 @@ main {
   padding: 3em;
 }
 
+.project-card p {
+  color: #adadad;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  width: 100%;
+  margin: 10px auto;
+}
+
 .item-card {
   width: 95%;
   border: #7a7a7a solid 2px;
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 40px;
+  margin: 0px auto;
+  margin-top: 40px;
 }
 
 .item-card .item-header, .item-card .item-bottom {
@@ -261,15 +291,16 @@ main {
 }
 
 .item-card p {
-  color: #7a7a7a;
+  color: #adadad;
   font-weight: 300;
   font-size: 16px;
+  line-height: 23px;
   width: 100%;
   margin: 10px auto;
 }
 
 .item-card aside {
-  color: #7a7a7a;
+  color: #adadad;
 }
 
 .item-card aside span {
@@ -305,7 +336,7 @@ main {
 }
 
 .selection-modal .pledge-choice {
-  border: #7a7a7a 2px solid;
+  border: #adadad 2px solid;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -324,9 +355,10 @@ main {
 }
 
 .selection-modal .pledge-choice aside {
-  color: #7a7a7a;
+  color: #adadad;
   font-weight: 300;
   font-size: 16px;
+  line-height: 23px;
 }
 
 .selection-modal .pledge-choice aside span {
@@ -361,19 +393,20 @@ main {
 }
 
 .selection-modal p {
-  color: #7a7a7a;
+  color: #adadad;
   font-weight: 300;
   font-size: 16px;
+  line-height: 23px;
   width: 100%;
   margin: 10px auto;
 }
 
 .selection-modal .pledge-input {
-  color: #7a7a7a;
+  color: #adadad;
   font-weight: 300;
   width: 100%;
   padding-top: 20px;
-  border-top: #7a7a7a solid 1px;
+  border-top: #adadad solid 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,7 +457,7 @@ main {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: #7a7a7a;
+  color: #adadad;
   font-weight: 300;
 }
 
@@ -466,9 +499,10 @@ main {
 }
 
 .success-modal p {
-  color: #7a7a7a;
+  color: #adadad;
   font-weight: 300;
   font-size: 16px;
+  line-height: 23px;
   width: 100%;
   margin: 10px auto;
 }
