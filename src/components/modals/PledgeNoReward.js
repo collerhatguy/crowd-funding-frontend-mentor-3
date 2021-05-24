@@ -16,7 +16,7 @@ export default function PledgeNoReward({success, setSelection, setBackers}) {
                     type="checkbox" 
                     value="none" 
                     id="no-reward" />
-                Pledge with no reward
+                <span>Pledge with no reward</span>
             </label>
             <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
             you will be signed up to receive product updates via email.</p>

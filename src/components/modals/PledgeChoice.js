@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 export default function PledgeChoice({
     item, 
@@ -8,7 +8,12 @@ export default function PledgeChoice({
 }) {
 
     const [pledge, setPledge] = useState(false);
+    const [valid, setValid] = useState(true)
     const [moneyOffered, setMoneyOffered] = useState(0);
+    useEffect(() => {
+        console.log(typeof moneyOffered)
+        typeof moneyOffered !== Number ? setValid(false) : setValid(true);
+    }, [moneyOffered])
     const submit = () => {
         success()
         setSelection(false);
@@ -16,7 +21,10 @@ export default function PledgeChoice({
     }
     return (
         <div 
-            style={pledge ? {borderColor: "hsl(176, 50%, 47%)"} : {}}
+            style={{
+                borderColor: pledge ? "hsl(176, 50%, 47%)" : "",
+                opacity: item.quantity ? "" : "0.5",
+        }}
             className="pledge-choice">
             <div className="pledge-header">
                 <label 
@@ -39,6 +47,7 @@ export default function PledgeChoice({
                 <input 
                     type="number" 
                     min={item.cost} 
+                    style={valid ? {} : {/* incalid styling here */}}
                     onChange={(e) => setMoneyOffered(parseInt(e.target.value))}
                 />
                 <button

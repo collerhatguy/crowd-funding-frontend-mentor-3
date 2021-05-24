@@ -28,6 +28,11 @@
     }
     #exit-btn {
         margin-left: 95%;
+        border: none;
+        background-color: white;
+        color: $neutral-color-200;
+        font-weight: 900;
+        font-size: $font-size +10px;
     }
     .highlight {
         color: $primary-color-100;

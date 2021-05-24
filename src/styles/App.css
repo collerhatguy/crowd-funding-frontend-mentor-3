@@ -368,6 +368,11 @@ main {
 
 .selection-modal #exit-btn {
   margin-left: 95%;
+  border: none;
+  background-color: white;
+  color: #adadad;
+  font-weight: 900;
+  font-size: 26px;
 }
 
 .selection-modal .highlight {
