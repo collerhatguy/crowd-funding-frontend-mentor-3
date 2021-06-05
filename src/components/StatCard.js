@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function StatCard({moneyRaised, backers}) {
     return (
-        <div className="stat-card">
+        <section className="stat-card">
             <table>
                 <tr>
                     <td>
@@ -17,6 +17,6 @@ export default function StatCard({moneyRaised, backers}) {
                 </tr>
             </table>
             <progress value={Math.floor(moneyRaised / 1000)} max="100"></progress>
-        </div>
+        </section>
     )
 }

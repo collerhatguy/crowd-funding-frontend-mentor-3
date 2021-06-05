@@ -4,7 +4,7 @@ import ItemsList from "./ItemsList";
 export default function ProjectCard({setMoneyRaised}) {
     
     return (
-        <div className="project-card">
+        <section className="project-card">
             <h2>About this project</h2>
             <p>
                 The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
@@ -16,6 +16,6 @@ export default function ProjectCard({setMoneyRaised}) {
                 to allow notepads, pens, and USB sticks to be stored under the stand.
             </p>
             <ItemsList setMoneyRaised={setMoneyRaised}/>
-        </div>
+        </section>
     )
 }

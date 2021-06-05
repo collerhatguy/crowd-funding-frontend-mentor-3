@@ -12,7 +12,7 @@ export default function TitleCard({setBackers}) {
     }
 
     return (
-        <div className="title-card">
+        <section className="title-card">
             <img id="master-picture" src={masterImg} />
             <h2>Mastercraft Bamboo Monitor Riser</h2>
             <p>
@@ -31,6 +31,6 @@ export default function TitleCard({setBackers}) {
                     {bookMarked ? "Bookmarked" : "Bookmark"}
                 </button>
             </div>
-        </div>
+        </section>
     )
 }
