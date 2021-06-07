@@ -14,15 +14,10 @@
 //      a. selection
 //      b. success
 // 6. media query
+
 // 0. default settings
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    &:focus {
-        outline: none;
-    }
-}
+@import "./reset";
+
 // 1. variables
 @import "./variables";
 
@@ -35,7 +30,7 @@
 }
 @mixin button1 {
     border-radius: 1000px;
-    padding: 1.2em 2.2em; 
+    padding: 1.2rem 2.2rem; 
     width: fit-content;
     background-color: $primary-color-100;
     color: white;
@@ -46,7 +41,7 @@
 }
 @mixin button2 {
     border-radius: 9000px;
-    padding: 1.2em 2.2em; 
+    padding: 1.2rem 2.2rem; 
     width: fit-content;
     background-color: white;
     color: $primary-color-200;
