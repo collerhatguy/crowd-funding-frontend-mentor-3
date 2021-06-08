@@ -44,10 +44,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  line-height: 1.5;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -60,12 +56,30 @@ body {
   outline: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
 header {
   height: 400px;
-  width: 100vw;
+  width: 100%;
   color: white;
   position: relative;
-  font-size: 16px;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 header #header-image-desktop, header #header-image-mobile {
@@ -82,29 +96,32 @@ header #header-image-mobile {
 }
 
 header #logo-image {
-  position: absolute;
-  top: 40px;
-  left: 40px;
+  width: 20%;
+  margin: 4rem;
+  z-index: 2;
 }
 
-header nav {
+header #desktop-nav {
+  z-index: 2;
   width: 100%;
-  position: absolute;
-  right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+header nav {
+  z-index: 2;
+  width: 60%;
+  right: 0px;
   margin: 40px 0px;
 }
 
 header nav a {
-  margin: 0px 50px;
   cursor: pointer;
 }
 
@@ -240,8 +257,8 @@ main {
 
 .stat-card {
   width: 50%;
-  margin: 10px auto;
-  border-radius: 10px;
+  margin: 1rem auto;
+  border-radius: 1rem;
   background-color: white;
 }
 
@@ -283,12 +300,12 @@ main {
 
 .stat-card td {
   color: #adadad;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin: 20px auto;
 }
 
 .stat-card td span {
-  font-size: 36px;
+  font-size: 2.6rem;
   color: black;
   display: block;
 }
@@ -308,7 +325,7 @@ main {
 .project-card p {
   color: #adadad;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 23px;
   width: 100%;
   margin: 10px auto;
@@ -344,7 +361,7 @@ main {
 .item-card p {
   color: #adadad;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 23px;
   width: 100%;
   margin: 10px auto;
@@ -356,7 +373,7 @@ main {
 
 .item-card aside span {
   color: black;
-  font-size: 26px;
+  font-size: 11.6rem;
 }
 
 .item-card button {
@@ -408,12 +425,12 @@ main {
 .selection-modal .pledge-choice aside {
   color: #adadad;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 23px;
 }
 
 .selection-modal .pledge-choice aside span {
-  font-size: 26px;
+  font-size: 2.6rem;
   color: black;
 }
 
@@ -423,7 +440,7 @@ main {
   background-color: white;
   color: #adadad;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 
 .selection-modal .highlight {
@@ -431,7 +448,7 @@ main {
 }
 
 .selection-modal h3 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 .selection-modal label {
@@ -451,7 +468,7 @@ main {
 .selection-modal p {
   color: #adadad;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 23px;
   width: 100%;
   margin: 10px auto;
@@ -497,8 +514,8 @@ main {
 .selection-modal .pledge-input input {
   text-align: center;
   border-radius: 9000px;
-  padding: 1.2em 2.2em;
-  margin: .2em;
+  padding: 1.2rem 2.2rem;
+  margin: .2rem;
   width: 20%;
   background-color: white;
   color: #3cb4ac;
@@ -557,7 +574,7 @@ main {
 .success-modal p {
   color: #adadad;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 23px;
   width: 100%;
   margin: 10px auto;
