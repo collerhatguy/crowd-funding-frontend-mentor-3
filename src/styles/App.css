@@ -164,28 +164,40 @@ main {
 .title-card {
   top: 300px;
   width: 50%;
-  padding: 2em;
+  padding: 2rem;
   background-color: white;
   border-radius: 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .title-card #master-picture {
   position: absolute;
   top: -30px;
-  left: 48%;
 }
 
-.title-card h2 {
-  padding: 1.5em;
+.title-card h2, .title-card p {
+  padding: 1.5rem;
+  margin: 1.5rem;
 }
 
 .title-card .btns-container {
   width: 100%;
-  padding: .8em 0px;
+  padding: .8rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,6 +222,8 @@ main {
   color: white;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
+  width: 50%;
+  height: 6rem;
 }
 
 .title-card button:first-child:hover {
@@ -218,39 +232,51 @@ main {
 
 .title-card button:last-child {
   position: relative;
-  width: 150px;
-  height: 58px;
-  padding-left: 40px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  width: 50%;
+  height: 6rem;
   background-color: #ededed;
   border: none;
-}
-
-.title-card button:last-child #bookmark-image {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.title-card button:last-child span {
+  width: 100%;
+}
+
+.title-card button:last-child #bookmark-image {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+@media only screen and (max-width: 650px) {
+  .btns-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .btns-container button {
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .title-card {
     padding-left: 0px;
   }
-  .title-card #master-picture {
-    left: 44%;
-  }
   .title-card button:first-child {
-    padding: 1.2em;
+    padding: 1.2rem;
     margin-left: 0px;
   }
 }

@@ -28,7 +28,9 @@ export default function TitleCard({setBackers}) {
                     <img 
                         id="bookmark-image" 
                         src={bookmarkImg} />
-                    {bookMarked ? "Bookmarked" : "Bookmark"}
+                    <span>  
+                        {bookMarked ? "Bookmarked" : "Bookmark"}
+                    </span>
                 </button>
             </div>
         </section>
