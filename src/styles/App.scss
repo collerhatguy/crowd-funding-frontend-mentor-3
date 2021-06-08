@@ -91,6 +91,12 @@ main {
     .selection-modal, .success-modal {
         left: 10%;
     }
+    .pledge-input {
+        flex-direction: column;
+        span, button, input {
+            width: 50% !important;
+        }
+    }
 }
 @media only screen and (max-width: 375px) {
     .title-card, .stat-card, .project-card {
@@ -101,6 +107,11 @@ main {
         width: fit-content;
         left: 0%;
         padding: 2rem;
+    }
+    .pledge-input {
+        span, button, input {
+            width: 100% !important;
+        }
     }
     #burger-image {
         display: block;

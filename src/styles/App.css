@@ -645,6 +645,15 @@ main {
   .selection-modal, .success-modal {
     left: 10%;
   }
+  .pledge-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pledge-input span, .pledge-input button, .pledge-input input {
+    width: 50% !important;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -658,6 +667,9 @@ main {
     width: fit-content;
     left: 0%;
     padding: 2rem;
+  }
+  .pledge-input span, .pledge-input button, .pledge-input input {
+    width: 100% !important;
   }
   #burger-image {
     display: block;
