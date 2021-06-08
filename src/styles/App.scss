@@ -87,20 +87,18 @@ main {
 @media only screen and (max-width: 375px) {
     .title-card, .stat-card, .project-card {
         min-width: fit-content;
-        max-width: 100%;
         margin: 0px auto;
         border-radius: 0px;
     }
     .selection-modal, .success-modal {
         width: fit-content;
-        max-width: 100%;
         left: 0%;
-        padding: 20px;
+        padding: 2rem;
     }
     #burger-image {
         display: block;
         position: absolute;
-        right: 70px;
+        right: 7rem;
     }
     #desktop-nav {
         visibility: hidden;
@@ -112,7 +110,7 @@ main {
             visibility: visible;
         }
         a {
-            margin: 40px 50px 0px 0px;
+            margin: 4rem 5rem 0px 0px;
         }
     }
 }

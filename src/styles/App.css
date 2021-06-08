@@ -412,7 +412,7 @@ main {
 
 .item-card aside span {
   color: black;
-  font-size: 11.6rem;
+  font-size: 2.6rem;
 }
 
 .item-card button {
@@ -641,7 +641,6 @@ main {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
-    max-width: 100%;
     margin: 0px auto;
     border-radius: 0px;
   }
@@ -649,14 +648,13 @@ main {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    max-width: 100%;
     left: 0%;
-    padding: 20px;
+    padding: 2rem;
   }
   #burger-image {
     display: block;
     position: absolute;
-    right: 70px;
+    right: 7rem;
   }
   #desktop-nav {
     visibility: hidden;
@@ -678,7 +676,7 @@ main {
     visibility: visible;
   }
   #desktop-nav a {
-    margin: 40px 50px 0px 0px;
+    margin: 4rem 5rem 0px 0px;
   }
 }
 /*# sourceMappingURL=App.css.map */
