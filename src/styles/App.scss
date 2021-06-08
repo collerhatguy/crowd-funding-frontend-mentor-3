@@ -84,11 +84,15 @@ main {
 @import "./success-modal";
 
 // 6. media query
+@media only screen and (max-width: 700px) {
+    .title-card, .stat-card, .project-card,  .selection-modal, .success-modal {
+        width: 80%;
+    } 
+}
 @media only screen and (max-width: 375px) {
     .title-card, .stat-card, .project-card {
-        min-width: fit-content;
-        margin: 0px auto;
-        border-radius: 0px;
+        width: 95%;
+        margin: 1rem auto;
     }
     .selection-modal, .success-modal {
         width: fit-content;

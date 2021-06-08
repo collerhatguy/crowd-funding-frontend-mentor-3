@@ -12,10 +12,10 @@
 .item-card {
     width: 95%;
     border:hsl(0, 0%, 48%) solid 2px;
-    border-radius: 10px;
-    padding: 40px;
-    margin: 0px auto;
-    margin-top: 40px;
+    border-radius: 1rem;
+    padding: 4rem;
+    margin: 0 auto;
+    margin-top: 4rem;
     .item-header, .item-bottom {
         width: 100%;
         display: flex;
@@ -40,5 +40,12 @@
     }
     button {
         @include button1();
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .item-card {
+        width: 100%;
+        padding: 2rem;
     }
 }

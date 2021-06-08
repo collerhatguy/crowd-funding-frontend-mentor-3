@@ -272,12 +272,8 @@ main {
 }
 
 @media only screen and (max-width: 375px) {
-  .title-card {
-    padding-left: 0px;
-  }
   .title-card button:first-child {
     padding: 1.2rem;
-    margin-left: 0px;
   }
 }
 
@@ -373,10 +369,10 @@ main {
 .item-card {
   width: 95%;
   border: #7a7a7a solid 2px;
-  border-radius: 10px;
-  padding: 40px;
-  margin: 0px auto;
-  margin-top: 40px;
+  border-radius: 1rem;
+  padding: 4rem;
+  margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .item-card .item-header, .item-card .item-bottom {
@@ -429,6 +425,13 @@ main {
 
 .item-card button:hover {
   background-color: #147b74;
+}
+
+@media only screen and (max-width: 700px) {
+  .item-card {
+    width: 100%;
+    padding: 2rem;
+  }
 }
 
 .selection-modal {
@@ -636,13 +639,16 @@ main {
   color: white;
 }
 
+@media only screen and (max-width: 700px) {
+  .title-card, .stat-card, .project-card, .selection-modal, .success-modal {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .title-card, .stat-card, .project-card {
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
-    margin: 0px auto;
-    border-radius: 0px;
+    width: 95%;
+    margin: 1rem auto;
   }
   .selection-modal, .success-modal {
     width: -webkit-fit-content;
