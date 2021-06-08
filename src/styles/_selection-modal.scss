@@ -3,16 +3,15 @@
     background-color: white;
     position: absolute;
     left: 25%;
-    top: 50%;
     width: 50%;
-    padding: 30px;
+    padding: 3rem;
     z-index: 2;
-    border-radius: 10px;
+    border-radius: 1rem;
     .pledge-choice {
         border: $neutral-color-200 2px solid;
-        padding: 20px;
-        margin: 20px;
-        border-radius: 10px;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 1rem;
         .pledge-header {
             display: flex;
             justify-content: space-between;
@@ -62,7 +61,7 @@
         padding-top: 20px;
         border-top: $neutral-color-200 solid 1px;
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: space-between;
         span {
             width: 60%;

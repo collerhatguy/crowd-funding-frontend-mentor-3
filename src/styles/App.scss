@@ -88,6 +88,9 @@ main {
     .title-card, .stat-card, .project-card,  .selection-modal, .success-modal {
         width: 80%;
     } 
+    .selection-modal, .success-modal {
+        left: 10%;
+    }
 }
 @media only screen and (max-width: 375px) {
     .title-card, .stat-card, .project-card {
