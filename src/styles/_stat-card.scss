@@ -4,19 +4,21 @@
     margin: 1rem auto;
     border-radius: 1rem;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     table {
         width: 100%;
     }
     progress[value] {
         -webkit-appearance: none;
         appearance: none;
-        margin-left: 10%;
-        margin-bottom: 5%;
+        margin: 0 auto 5%;
         width: 80%;
         background-color: $primary-color-200;
         border-radius: 1000px;
         &::-webkit-progress-bar {
-
             border-radius: 9000px;
         }
         &::-webkit-progress-value {
@@ -38,9 +40,10 @@
             color: $neutral-color-100;
             display: block;
         }
-        &:first-child, &:nth-child(2) {
+        &:nth-child(2) {
             border-right: $primary-color-200 1px solid;
-            padding-right: 10%;
+            border-left: $primary-color-200 1px solid;
+            padding: 0 1rem;
         }
     }
 }

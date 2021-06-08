@@ -286,6 +286,19 @@ main {
   margin: 1rem auto;
   border-radius: 1rem;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .stat-card table {
@@ -296,8 +309,7 @@ main {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  margin-left: 10%;
-  margin-bottom: 5%;
+  margin: 0 auto 5%;
   width: 80%;
   background-color: #147b74;
   border-radius: 1000px;
@@ -336,9 +348,10 @@ main {
   display: block;
 }
 
-.stat-card td:first-child, .stat-card td:nth-child(2) {
+.stat-card td:nth-child(2) {
   border-right: #147b74 1px solid;
-  padding-right: 10%;
+  border-left: #147b74 1px solid;
+  padding: 0 1rem;
 }
 
 .project-card {
