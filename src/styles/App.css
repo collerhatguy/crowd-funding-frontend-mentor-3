@@ -697,6 +697,9 @@ main {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     background-color: white;
+    position: absolute;
+    width: 90% !important;
+    left: 10px;
   }
   #desktop-nav[data-visible="true"] {
     visibility: visible;
