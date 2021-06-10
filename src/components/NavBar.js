@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import burgerImg from "../images/icon-hamburger.svg"
+import BackDrop from "./modals/BackDrop"
 
 export default function NavBar() {
     const [visible, setVisible] = useState(false)
@@ -14,6 +15,7 @@ export default function NavBar() {
                 <a>Discover</a>       
                 <a>Get Started</a>
             </div>
+            <BackDrop visible={visible} />
         </nav>
     )
 }
