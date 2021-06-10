@@ -33,7 +33,6 @@ header {
     nav {
         z-index: 2;
         width: 60%;
-        right: 0px;
         margin: 40px 0px;
         a {
             cursor: pointer;
@@ -51,6 +50,9 @@ header {
         }
         #header-image-mobile {
             display: block;
+        }
+        nav {
+            flex-direction: column;
         }
     }
 }

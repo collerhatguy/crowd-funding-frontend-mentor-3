@@ -117,7 +117,6 @@ header #desktop-nav {
 header nav {
   z-index: 2;
   width: 60%;
-  right: 0px;
   margin: 40px 0px;
 }
 
@@ -135,6 +134,12 @@ header nav a {
   }
   header #header-image-mobile {
     display: block;
+  }
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -519,7 +524,7 @@ main {
   color: #adadad;
   font-weight: 300;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 2rem;
   border-top: #adadad solid 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,10 +678,10 @@ main {
   }
   #burger-image {
     display: block;
-    position: absolute;
-    right: 7rem;
   }
   #desktop-nav {
+    margin-top: 2rem;
+    border-radius: 1rem;
     visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -691,12 +696,19 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    background-color: white;
   }
   #desktop-nav[data-visible="true"] {
     visibility: visible;
   }
   #desktop-nav a {
-    margin: 4rem 5rem 0px 0px;
+    width: 100%;
+    color: black;
+    padding: 1rem;
+  }
+  #desktop-nav a:nth-child(2) {
+    border-top: 1px rgba(128, 128, 128, 0.2) solid;
+    border-bottom: 1px rgba(128, 128, 128, 0.2) solid;
   }
 }
 /*# sourceMappingURL=App.css.map */
