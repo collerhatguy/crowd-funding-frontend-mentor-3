@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <header> 
-        <img id="header-image-desktop" src={headerImgDesktop} />
-        <img id="header-image-mobile" src={headerImgMobile} />
+        <img id="header-image-desktop" src={headerImgDesktop} alt={`${headerImgDesktop}`}/>
+        <img id="header-image-mobile" src={headerImgMobile} alt={`${headerImgMobile}`}/>
         <img id="logo-image" src={logoImg} />
         <NavBar />
       </header>
