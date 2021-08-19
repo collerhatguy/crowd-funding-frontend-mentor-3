@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/crowd-funding-frontend-mentor-3/static/css/main.e25898b9.chunk.css",
-    "main.js": "/crowd-funding-frontend-mentor-3/static/js/main.299f9e6e.chunk.js",
-    "main.js.map": "/crowd-funding-frontend-mentor-3/static/js/main.299f9e6e.chunk.js.map",
+    "main.css": "/crowd-funding-frontend-mentor-3/static/css/main.be159473.chunk.css",
+    "main.js": "/crowd-funding-frontend-mentor-3/static/js/main.77ff02cd.chunk.js",
+    "main.js.map": "/crowd-funding-frontend-mentor-3/static/js/main.77ff02cd.chunk.js.map",
     "runtime-main.js": "/crowd-funding-frontend-mentor-3/static/js/runtime-main.3723738f.js",
     "runtime-main.js.map": "/crowd-funding-frontend-mentor-3/static/js/runtime-main.3723738f.js.map",
-    "static/js/2.d0114aa5.chunk.js": "/crowd-funding-frontend-mentor-3/static/js/2.d0114aa5.chunk.js",
-    "static/js/2.d0114aa5.chunk.js.map": "/crowd-funding-frontend-mentor-3/static/js/2.d0114aa5.chunk.js.map",
+    "static/js/2.de1fa0b8.chunk.js": "/crowd-funding-frontend-mentor-3/static/js/2.de1fa0b8.chunk.js",
+    "static/js/2.de1fa0b8.chunk.js.map": "/crowd-funding-frontend-mentor-3/static/js/2.de1fa0b8.chunk.js.map",
     "index.html": "/crowd-funding-frontend-mentor-3/index.html",
-    "static/css/main.e25898b9.chunk.css.map": "/crowd-funding-frontend-mentor-3/static/css/main.e25898b9.chunk.css.map",
-    "static/js/2.d0114aa5.chunk.js.LICENSE.txt": "/crowd-funding-frontend-mentor-3/static/js/2.d0114aa5.chunk.js.LICENSE.txt",
+    "static/css/main.be159473.chunk.css.map": "/crowd-funding-frontend-mentor-3/static/css/main.be159473.chunk.css.map",
+    "static/js/2.de1fa0b8.chunk.js.LICENSE.txt": "/crowd-funding-frontend-mentor-3/static/js/2.de1fa0b8.chunk.js.LICENSE.txt",
     "static/media/icon-bookmark.7777f8ec.svg": "/crowd-funding-frontend-mentor-3/static/media/icon-bookmark.7777f8ec.svg",
     "static/media/icon-check.bdee5269.svg": "/crowd-funding-frontend-mentor-3/static/media/icon-check.bdee5269.svg",
     "static/media/icon-hamburger.f8a9f0cf.svg": "/crowd-funding-frontend-mentor-3/static/media/icon-hamburger.f8a9f0cf.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3723738f.js",
-    "static/js/2.d0114aa5.chunk.js",
-    "static/css/main.e25898b9.chunk.css",
-    "static/js/main.299f9e6e.chunk.js"
+    "static/js/2.de1fa0b8.chunk.js",
+    "static/css/main.be159473.chunk.css",
+    "static/js/main.77ff02cd.chunk.js"
   ]
 }
