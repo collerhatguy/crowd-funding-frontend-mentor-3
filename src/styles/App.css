@@ -499,7 +499,16 @@ main {
   color: black;
 }
 
+.selection-modal .pledge-choice.pledge {
+  border-color: #3cb4ac;
+}
+
+.selection-modal .pledge-choice.opacity {
+  opacity: 0.5;
+}
+
 .selection-modal #exit-btn {
+  cursor: pointer;
   margin-left: 95%;
   border: none;
   background-color: white;

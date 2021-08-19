@@ -24,8 +24,15 @@
                 color: $neutral-color-100;
             }
         }
+        &.pledge {
+            border-color: hsl(176, 50%, 47%);
+        }
+        &.opacity {
+            opacity: 0.5;
+        }
     }
     #exit-btn {
+        cursor: pointer;
         margin-left: 95%;
         border: none;
         background-color: white;
