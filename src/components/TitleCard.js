@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import masterImg from "../images/logo-mastercraft.svg";
 import bookmarkImg from "../images/icon-bookmark.svg";
+import { connect } from 'react-redux';
+import { backProject } from "../actions";
 
-export default function TitleCard({setBackers}) {
+function TitleCard(props) {
+    const { backProject, backed } = props;
     const [bookMarked, setBookMarked] = useState(false)
-    const [backed, setBacked] = useState(false)
     const style = bookMarked ? {color: "hsl(176, 72%, 28%)"} : {};
-    const handleBackingButton = () => {
-        backed ? setBackers(prevBacker => prevBacker - 1) : setBackers(prevBacker => prevBacker + 1);
-        setBacked(!backed);
-    }
+
+    const handleBookmark = () => setBookMarked(!bookMarked);
 
     return (
         <section className="title-card">
@@ -20,10 +20,10 @@ export default function TitleCard({setBackers}) {
             </p>
             <div className="btns-container">
                 <button
-                    onClick={() => handleBackingButton()}
+                    onClick={backProject}
                     >{backed ? "Unback this project?" : "Back this project?"}</button>
                 <button 
-                    onClick={() => setBookMarked(!bookMarked)}
+                    onClick={handleBookmark}
                     style={style}>
                     <img 
                         id="bookmark-image" 
@@ -36,3 +36,9 @@ export default function TitleCard({setBackers}) {
         </section>
     )
 }
+
+const mapStateToProps = (state) => ({
+    backed: state.backed
+})
+  
+export default connect(mapStateToProps, { backProject })(TitleCard)

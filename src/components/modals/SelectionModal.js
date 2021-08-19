@@ -18,7 +18,7 @@ export default function SelectionModal({
                 className="selection-modal">
                 <button
                     id="exit-btn" 
-                    onClick={() => setSelection()}>X</button>
+                    onClick={setSelection}>X</button>
                 <h3>Back this project</h3>
                 <p>
                     Want to support us in bringing Mastercraft 
@@ -28,15 +28,15 @@ export default function SelectionModal({
                     success={success} 
                     setSelection={setSelection} 
                 />
-                {items.map(item => {
-                    return <PledgeChoice 
-                                item={item} 
-                                success={success} 
-                                setSelection={setSelection} 
-                                setBackers={setBackers}
-                                setMoneyRaised={setMoneyRaised}
-                            />
-                })}
+                {items.map(item => 
+                    <PledgeChoice 
+                        item={item} 
+                        success={success} 
+                        setSelection={setSelection} 
+                        setBackers={setBackers}
+                        setMoneyRaised={setMoneyRaised}
+                    />
+                )}
             </div>
             <div className="background" />
         </div>,

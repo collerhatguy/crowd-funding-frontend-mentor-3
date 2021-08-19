@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from "react-dom";
 import successImg from "../../images/icon-check.svg";
 
-export default function SuccessModal({success, done}) {
+export default function SuccessModal({ done }) {
     return ReactDOM.createPortal(
-        <div style={success ? {} : {display: "none"}}>
+        <div>
             <div 
                 className="success-modal"
                 >

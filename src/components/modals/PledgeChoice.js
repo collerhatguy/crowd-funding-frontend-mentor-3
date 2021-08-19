@@ -11,7 +11,6 @@ export default function PledgeChoice({
     const [valid, setValid] = useState(true)
     const [moneyOffered, setMoneyOffered] = useState(0);
     useEffect(() => {
-        console.log(typeof moneyOffered)
         typeof moneyOffered !== Number ? setValid(false) : setValid(true);
     }, [moneyOffered])
     const submit = () => {
@@ -40,20 +39,19 @@ export default function PledgeChoice({
                 <aside><span>{item.quantity}</span> left</aside>
             </div>
             <p>{item.description}</p>
-            <div 
-                style={pledge ? {} : {display: "none"}}
-                className="pledge-input">
-                <span>Enter your pledge</span>
-                <input 
-                    type="number" 
-                    min={item.cost} 
-                    style={valid ? {} : {/* incalid styling here */}}
-                    onChange={(e) => setMoneyOffered(parseInt(e.target.value))}
-                />
-                <button
-                    onClick={() => submit()}
-                >Continue</button>
-            </div>
+            {pledge && 
+                <div className="pledge-input">
+                    <span>Enter your pledge</span>
+                    <input 
+                        type="number" 
+                        min={item.cost} 
+                        onChange={(e) => setMoneyOffered(parseInt(e.target.value))}
+                    />
+                    <button
+                        onClick={submit}
+                    >Continue</button>
+                </div>
+            }
         </div>
     )
 }

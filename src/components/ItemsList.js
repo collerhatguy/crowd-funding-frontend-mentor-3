@@ -21,7 +21,7 @@ export default function ItemsList({setMoneyRaised}) {
                 success={() => setSuccess(true)}
                 setMoneyRaised={setMoneyRaised}
             />
-            <SuccessModal success={success} done={() => setSuccess(false)} />
+            {success && <SuccessModal done={() => setSuccess(false)} />}
         </div>
     )
 }
