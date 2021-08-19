@@ -22,7 +22,7 @@ function App() {
       <main>
         <TitleCard setBackers={setBackers}/>
         <StatCard moneyRaised={moneyRaised} backers={backers}/>
-        <ProjectCard setMoneyRaised={setMoneyRaised} setBackers={setBackers}/>
+        <ProjectCard setMoneyRaised={setMoneyRaised}/>
       </main>
     </div>
   );
