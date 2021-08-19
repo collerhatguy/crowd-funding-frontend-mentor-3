@@ -40,6 +40,13 @@
     }
     button {
         @include button1();
+        background-color: hsl(176, 50%, 47%);
+    }
+    &.opacity {
+        opacity: .6;
+        button {
+            background-color: hsl(0, 0%, 48%);
+        }
     }
 }
 

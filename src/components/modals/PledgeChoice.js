@@ -1,23 +1,22 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import { connect } from 'react-redux';
+import { donateMoney } from "../../actions";
 
-export default function PledgeChoice({
-    item, 
-    success, 
-    setSelection, 
-    setMoneyRaised
-}) {
-
+function PledgeChoice(props) {
+    const { item, success, setSelection, donateMoney } = props;
     const [pledge, setPledge] = useState(false);
     const [valid, setValid] = useState(true)
     const [moneyOffered, setMoneyOffered] = useState(0);
     useEffect(() => {
         typeof moneyOffered !== Number ? setValid(false) : setValid(true);
     }, [moneyOffered])
+
     const submit = () => {
         success()
         setSelection(false);
-        setMoneyRaised(prevMoney => prevMoney + moneyOffered);
+        donateMoney(moneyOffered)
     }
+    
     return (
         <div 
             style={{
@@ -55,3 +54,4 @@ export default function PledgeChoice({
         </div>
     )
 }
+export default connect(null, { donateMoney })(PledgeChoice)

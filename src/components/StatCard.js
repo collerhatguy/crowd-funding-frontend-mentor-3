@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { connect } from "react-redux";
 
-export default function StatCard({moneyRaised, backers}) {
+function StatCard(props) {
+    const { moneyRaised, backers } = props;
     return (
         <section className="stat-card">
             <table>
@@ -20,3 +22,10 @@ export default function StatCard({moneyRaised, backers}) {
         </section>
     )
 }
+
+const mapStateToProps = (state) => ({
+    moneyRaised: state.moneyRaised,
+    backers: state.backers
+})
+
+export default connect(mapStateToProps)(StatCard);

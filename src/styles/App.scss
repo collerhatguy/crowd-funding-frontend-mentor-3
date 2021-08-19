@@ -29,6 +29,7 @@
     line-height: 23px;
 }
 @mixin button1 {
+    cursor: pointer;
     border-radius: 1000px;
     padding: 1.2rem 2.2rem; 
     width: fit-content;
@@ -37,6 +38,9 @@
     transition-duration: 300ms;
     &:hover {
         background-color: $primary-color-200;
+    }
+    &:disabled {
+        cursor: default;
     }
 }
 @mixin button2 {

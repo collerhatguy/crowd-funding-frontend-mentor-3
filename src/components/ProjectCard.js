@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemsList from "./ItemsList";
 
-export default function ProjectCard({setMoneyRaised}) {
+export default function ProjectCard() {
     
     return (
         <section className="project-card">
@@ -15,7 +15,7 @@ export default function ProjectCard({setMoneyRaised}) {
                 Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
                 to allow notepads, pens, and USB sticks to be stored under the stand.
             </p>
-            <ItemsList setMoneyRaised={setMoneyRaised}/>
+            <ItemsList/>
         </section>
     )
 }

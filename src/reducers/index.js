@@ -11,7 +11,7 @@ const reducer = (state = initialState, actions) => {
         case BACK_PROJECT:
             return {
                 ...state,
-                backers: backed ? state.backers - 1 : state.backers + 1,
+                backers: state.backed ? state.backers - 1 : state.backers + 1,
                 backed: !state.backed
             }
         case DONATE_MONEY:

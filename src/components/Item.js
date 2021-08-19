@@ -1,25 +1,10 @@
 import { useRef } from "react"
 import React from 'react'
 
-export default function Item({item, setSelection}) {
-    const button = useRef();
-    const hover = () => {
-        if (item.quantity) {
-            button.current.style = {};
-        }
-    }
-    const notHover = () => {
-        if (item.quantity) {
-            button.current.style = {
-                backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",        
-            }
-        }
-    }
+export default function Item(props) {
+    const { item, setSelection } = props;
     return (
-        <div className="item-card"
-            style={{
-                opacity: item.quantity ? "1" : ".6",
-            }}>
+        <div className={`item-card ${!item.quantity && "opacity"}`}>
             <div className="item-header">
                 <h3>{item.title}</h3>
                 <span>Pledge ${item.cost} or more</span>
@@ -28,15 +13,8 @@ export default function Item({item, setSelection}) {
             <div className="item-bottom">
                 <aside><span>{item.quantity}</span> left</aside>
                 <button
-                    ref={button}
-                    onMouseEnter={() => hover()}
-                    onMouseLeave={() => notHover()}
-                    onClick={() => {
-                        if (item.quantity) setSelection();
-                    }}
-                    style={{
-                        backgroundColor: item.quantity ? "hsl(176, 50%, 47%" : "hsl(0, 0%, 48%)",
-                    }}>
+                    disabled={!item.quantity}
+                    onClick={setSelection}>
                     {item.quantity ? "Select Reward" : "Out of stock"}
                 </button>
             </div>

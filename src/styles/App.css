@@ -218,6 +218,7 @@ main {
 }
 
 .title-card button:first-child {
+  cursor: pointer;
   border-radius: 1000px;
   padding: 1.2rem 2.2rem;
   width: -webkit-fit-content;
@@ -233,6 +234,10 @@ main {
 
 .title-card button:first-child:hover {
   background-color: #147b74;
+}
+
+.title-card button:first-child:disabled {
+  cursor: default;
 }
 
 .title-card button:last-child {
@@ -417,6 +422,7 @@ main {
 }
 
 .item-card button {
+  cursor: pointer;
   border-radius: 1000px;
   padding: 1.2rem 2.2rem;
   width: -webkit-fit-content;
@@ -426,10 +432,23 @@ main {
   color: white;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
+  background-color: #3cb4ac;
 }
 
 .item-card button:hover {
   background-color: #147b74;
+}
+
+.item-card button:disabled {
+  cursor: default;
+}
+
+.item-card.opacity {
+  opacity: .6;
+}
+
+.item-card.opacity button {
+  background-color: #7a7a7a;
 }
 
 @media only screen and (max-width: 700px) {
@@ -542,6 +561,7 @@ main {
 }
 
 .selection-modal .pledge-input button {
+  cursor: pointer;
   border-radius: 1000px;
   padding: 1.2rem 2.2rem;
   width: -webkit-fit-content;
@@ -555,6 +575,10 @@ main {
 
 .selection-modal .pledge-input button:hover {
   background-color: #147b74;
+}
+
+.selection-modal .pledge-input button:disabled {
+  cursor: default;
 }
 
 .selection-modal .pledge-input input {

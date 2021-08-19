@@ -3,17 +3,10 @@ import ReactDOM from "react-dom";
 import PledgeChoice from './PledgeChoice';
 import PledgeNoReward from "./PledgeNoReward";
 
-export default function SelectionModal({
-    items, 
-    selection, 
-    setSelection, 
-    success, 
-    setMoneyRaised, 
-    setBackers
-}) {
-
+export default function SelectionModal(props) {
+    const { items, setSelection, success } = props;
     return ReactDOM.createPortal(
-        <div style={selection ? {} : {display: 'none'}}>
+        <div>
             <div 
                 className="selection-modal">
                 <button
@@ -33,8 +26,6 @@ export default function SelectionModal({
                         item={item} 
                         success={success} 
                         setSelection={setSelection} 
-                        setBackers={setBackers}
-                        setMoneyRaised={setMoneyRaised}
                     />
                 )}
             </div>
