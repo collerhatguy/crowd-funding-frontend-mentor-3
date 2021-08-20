@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import burgerImg from "../images/icon-hamburger.svg"
 import BackDrop from "./modals/BackDrop"
 
@@ -9,7 +9,9 @@ export default function NavBar() {
             <img 
                 onClick={() => setVisible(!visible)}
                 id="burger-image" 
-                src={burgerImg} />
+                src={burgerImg} 
+                alt={`${burgerImg}`}
+            />
             <div id="desktop-nav" data-visible={visible}>
                 <a>About</a>       
                 <a>Discover</a>       

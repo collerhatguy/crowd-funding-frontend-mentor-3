@@ -260,6 +260,10 @@ main {
           align-items: center;
 }
 
+.title-card button:last-child.bookmarked {
+  color: #147b74;
+}
+
 .title-card button:last-child span {
   width: 100%;
 }

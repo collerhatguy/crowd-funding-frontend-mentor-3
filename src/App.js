@@ -14,7 +14,7 @@ function App() {
       <header> 
         <img id="header-image-desktop" src={headerImgDesktop} alt={`${headerImgDesktop}`}/>
         <img id="header-image-mobile" src={headerImgMobile} alt={`${headerImgMobile}`}/>
-        <img id="logo-image" src={logoImg} />
+        <img id="logo-image" src={logoImg} alt={`${logoImg}`} />
         <NavBar />
       </header>
       <main>

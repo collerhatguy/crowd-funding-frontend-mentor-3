@@ -1,13 +1,25 @@
-import { BACK_PROJECT, DONATE_MONEY } from "../actions";
+import { BACK_PROJECT, DONATE_MONEY, REVEAL_SELECTION, REVEAL_SUCCESS } from "../actions";
 
 const initialState = {
     backers: 5007,
     moneyRaised: 89914,
-    backed: false
+    backed: false,
+    revealSuccess: false,
+    revealSelection: false,
 }
 
 const reducer = (state = initialState, actions) => {
     switch(actions.type) {
+        case REVEAL_SELECTION:
+            return {
+                ...state,
+                revealSelection: !state.revealSelection
+            }
+        case REVEAL_SUCCESS:
+            return {
+                ...state,
+                revealSuccess: !state.revealSuccess
+            }
         case BACK_PROJECT:
             return {
                 ...state,

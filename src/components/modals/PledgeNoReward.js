@@ -1,15 +1,21 @@
 import React, {useState} from 'react'
 
-export default function PledgeNoReward({success, setSelection, setBackers}) {
+export default function PledgeNoReward(props) {
+    const { revealSuccess, revealSelection } = props;
     const [pledge, setPledge] = useState(false);
+    
     const submit = () => {
-        success();
-        setSelection(false);
+        revealSuccess();
+        revealSelection();
     }
+    
     return (
         <div 
-            className="pledge-choice"
-            style={pledge ? {borderColor: "hsl(176, 50%, 47%)"} : {}}>
+            className={`
+                pledge-choice 
+                opacity
+                ${pledge && "pledge"}    
+            `}>
             <label for={`no-reward`}>
                 <input 
                     onClick={() => setPledge(!pledge)}
@@ -20,16 +26,17 @@ export default function PledgeNoReward({success, setSelection, setBackers}) {
             </label>
             <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
             you will be signed up to receive product updates via email.</p>
-            <div 
-                style={pledge ? {} : {display: "none"}}
-                className="pledge-input">
-                <button
-                    style={{
-                        marginLeft: "50%",
-                    }}
-                    onClick={() => submit()}
-                >Continue</button>
-            </div>
+            {pledge &&
+                <div
+                    className="pledge-input">
+                    <button
+                        style={{
+                            marginLeft: "50%",
+                        }}
+                        onClick={submit}
+                    >Continue</button>
+                </div>
+            }
         </div>
     )
 }

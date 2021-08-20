@@ -44,6 +44,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &.bookmarked {
+            color: hsl(176, 72%, 28%);
+        }
         span {
             width: 100%;
         }
@@ -51,6 +54,7 @@
             transition-duration: 300ms;
         }
     }
+    
 }
 
 @media only screen and (max-width: 650px) {

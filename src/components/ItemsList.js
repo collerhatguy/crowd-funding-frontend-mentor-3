@@ -1,29 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Item from "./Item";
 import SelectionModal from "./modals/SelectionModal";
 import SuccessModal from "./modals/SuccessModal";
 import items from "../items";
+import { connect } from 'react-redux';
 
-export default function ItemsList() {
-    const [selection, setSelection] = useState(false);
-    const [success, setSuccess] = useState(false)
-    const undoSelection = () => setSelection(!selection)
+function ItemsList(props) {
+    const { success, selection } = props;
     return (
         <div className="item-list">
             {items.map(item => 
-                <Item 
-                    item={item} 
-                    setSelection={undoSelection} 
-                />
+                <Item item={item}/>
             )}
-            {selection &&
-                <SelectionModal 
-                    items={items} 
-                    setSelection={undoSelection}
-                    success={() => setSuccess(true)}
-                />
+            {selection && <SelectionModal items={items}/>
             }
-            {success && <SuccessModal done={() => setSuccess(false)} />}
+            {success && <SuccessModal/>}
         </div>
     )
 }
+
+const mapStateToProps = (state) => ({
+    success: state.revealSuccess,
+    selection: state.revealSelection
+})
+
+export default connect(mapStateToProps)(ItemsList); 

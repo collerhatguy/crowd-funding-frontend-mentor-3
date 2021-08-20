@@ -1,14 +1,17 @@
 import React from 'react'
 import ReactDOM from "react-dom";
+import { connect } from 'react-redux';
 import successImg from "../../images/icon-check.svg";
+import { revealSuccess } from "../../actions"
 
-export default function SuccessModal({ done }) {
+function SuccessModal(props) {
+    const { revealSuccess } = props;
     return ReactDOM.createPortal(
         <div>
             <div 
                 className="success-modal"
                 >
-                <img src={successImg} />
+                <img src={successImg} alt={`${successImg}`}/>
                 <h3>Thanks for your support!</h3>
                 <p>
                     Your pledge brings us one step closer to 
@@ -17,7 +20,7 @@ export default function SuccessModal({ done }) {
                     campaign is completed.
                 </p>
                 <button
-                    onClick={() => done()}
+                    onClick={revealSuccess}
                 >Got it!</button>
             </div>
             <div className="background" />
@@ -25,3 +28,5 @@ export default function SuccessModal({ done }) {
         document.getElementById("portal")
     )
 }
+
+export default connect(null, { revealSuccess })(SuccessModal)
