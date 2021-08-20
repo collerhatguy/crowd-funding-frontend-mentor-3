@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 import { donateMoney } from "../../actions";
 
 function PledgeChoice(props) {
-    const { item, success, setSelection, donateMoney } = props;
+    const { item, revealSuccess, revealSelection, donateMoney } = props;
     const [pledge, setPledge] = useState(false);
     const [moneyOffered, setMoneyOffered] = useState(0);
 
     const submit = () => {
-        success()
-        setSelection(false);
+        revealSuccess()
+        revealSelection();
         donateMoney(moneyOffered)
     }
 
